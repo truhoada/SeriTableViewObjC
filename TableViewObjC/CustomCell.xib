@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="avQ-58-R87">
+                        <rect key="frame" x="8" y="8" width="160" height="111"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="872-Yh-FLD"/>
+                            <constraint firstAttribute="width" constant="160" id="PQF-ww-TP3"/>
+                            <constraint firstAttribute="height" constant="111" id="doD-0P-6J7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Film Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bw9-JC-2PY">
+                        <rect key="frame" x="181" y="18" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROE-ML-uNf">
+                        <rect key="frame" x="181" y="89" width="45" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuA-aW-avQ">
+                        <rect key="frame" x="297" y="48" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="PH4-oU-Oi1"/>
+                            <constraint firstAttribute="width" constant="32" id="oMO-Oo-DIm"/>
+                        </constraints>
+                        <state key="normal" image="shop.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="ROE-ML-uNf" secondAttribute="bottom" constant="9" id="1Ik-yz-Et9"/>
+                    <constraint firstItem="avQ-58-R87" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="5Fa-bc-XNe"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fuA-aW-avQ" secondAttribute="trailing" constant="2" id="Asy-eT-ZEw"/>
+                    <constraint firstItem="avQ-58-R87" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Fup-c2-z2l"/>
+                    <constraint firstAttribute="centerY" secondItem="fuA-aW-avQ" secondAttribute="centerY" id="MjU-cn-V2U"/>
+                    <constraint firstItem="bw9-JC-2PY" firstAttribute="leading" secondItem="avQ-58-R87" secondAttribute="trailing" constant="13" id="Sdp-zU-eUv"/>
+                    <constraint firstItem="bw9-JC-2PY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="XqU-uo-kfG"/>
+                    <constraint firstItem="ROE-ML-uNf" firstAttribute="leading" secondItem="avQ-58-R87" secondAttribute="trailing" constant="13" id="qVO-1X-T70"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgThumb" destination="avQ-58-R87" id="Yh1-h8-Bti"/>
+                <outlet property="labelScore" destination="ROE-ML-uNf" id="WKH-4L-8qa"/>
+                <outlet property="labelTitle" destination="bw9-JC-2PY" id="84X-Kk-5Lp"/>
+            </connections>
+            <point key="canvasLocation" x="934.5" y="348"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shop.png" width="32" height="32"/>
+    </resources>
+</document>
