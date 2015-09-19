@@ -40,6 +40,7 @@
                                   ]};
     NSDictionary* advanced = @{SECTION: @"Advanced", MENU: @[
                                     @{TITLE: @"Custom Draw Cell", CLASS: @"CustomDrawCell"},
+                                    @{TITLE: @"Basic CollectionView", CLASS: @"BasicCollectionView#Collection"},
                                     @{TITLE: @"Basic Lazy Loading", CLASS: @"DemoLazyLoading"}
                 
                              ]};
